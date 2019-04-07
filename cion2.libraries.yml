@@ -1,7 +1,7 @@
 global-styling:
   css:
     theme:
-      css/style.css: {}
-      css/old_site.css: {}
-      css/font-awesome.min.css: {}
-      css/ckeditor_override_styles.css: {}
+      css/main.css: {}
+  js:
+    theme:
+      js/site.min.js: {}
