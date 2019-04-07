@@ -1,0 +1,102 @@
+{% set MEDIA_URL ="/themes/cion/" %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CION | {% block title %}{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/main.css">
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/custom-styles.css">
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/ekko-lightbox.css" rel="stylesheet">
+
+    {% block css %}{% endblock %}
+</head>
+
+<body>
+
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand img-responsive" href="/"><img src="{{ MEDIA_URL }}img/logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+            </ul>
+        </div>
+        <!--/.navbar-collapse -->
+    </div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<!--Bottom Section-->
+<section id="bottom">
+    <div class="container">
+        <div class="row margin-20">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+
+                <ul class="list-inline">
+                    <li><a href="https://facebook.com/MusicAndFilmInMotion"><img src="{{ MEDIA_URL }}img/cion_facebook_icon.png" /></a></li>
+                    <li><a href="https://twitter.com/mfm_noront"><img src="{{ MEDIA_URL }}img/cion_twitter_icon.png" /></a></li>
+                    <li><a href="https://instagram.com/mfmcion/"><img src="{{ MEDIA_URL }}img/cion_instagram_icon.png" /></a></li>
+                </ul>
+                <p>
+                    40 Larch Street, Suite 103, Sudbury, ON, P3E 5M7 | 705-885-9889 | <a href="mailto:info@cionorth.ca"><i class="icon-envelope-alt"></i> info@cionorth.ca</a>
+                </p>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <p>&copy; Copyright 2008 - {{ 'now'|date('Y') }}. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ page.highlighted }}
+
+
+<script src="{{ MEDIA_URL }}js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+<script src="{{ MEDIA_URL }}js/bootstrap.min.js"></script>
+<script src="{{ MEDIA_URL }}js/main.js"></script>
+<script src="{{ MEDIA_URL }}js/ekko-lightbox.js"></script>
+<script>
+    !function ($) {
+        $(function () {
+            $('#header').carousel()
+        })
+    }(window.jQuery)
+
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
+</body>
+</html>
