@@ -1,15 +1,22 @@
 name: Cion2
 type: theme
 base theme: false
-Core: 8.x
+core: 8.x
 
 regions:
-header: Header
-primary_menu: 'Primary menu'
-secondary_menu: 'Secondary menu'
-page_top: 'Page top'
-main_content: 'Main Content'
-footer_bottom: 'Footer Bottom'
-footer_left: 'Footer Left'
-footer_middle: 'Footer Middle'
-footer_botttom: 'Footer Bottom'
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page Top'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  footer_left: 'Footer left'
+  footer_middle: 'Footer middle'
+  footer_right: 'Footer Right'
+  footer_bottom: 'Footer Bottom'
+
+libraries:
+  - cion2/global-styling
+  - cion2/global-scripts

@@ -5,29 +5,13 @@
  *
  * All custom PHP for this theme
  */
- 
+
 use Drupal\Core\Messenger\MessengerInterface;
 use Drupal\Core\Messenger;
- 
-function cion_preprocess_page(&$variables) {
- 
-/*
-$messenger= \Drupal::messenger();
-$messenger->addMessage('Hello!');
-*/
- 
 
-/*
-$connection = \Drupal\Core\Database\Database::getConnection('default', 'cion_cms');
+function cion2_preprocess_page(&$variables) {
 
-
-$query = $connection->query("SELECT DISTINCT title FROM cms_title");
-$result = $query->fetchAll();
-
-kint($result);
-*/
 
 
 
 }
- 

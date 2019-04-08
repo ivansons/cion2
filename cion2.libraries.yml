@@ -2,6 +2,7 @@ global-styling:
   css:
     theme:
       css/main.css: {}
+global-scripts:
   js:
     theme:
       js/site.min.js: {}

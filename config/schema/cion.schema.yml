@@ -1,5 +1,0 @@
-# Schema for the theme setting configuration file of the CION theme.
-
-cion.settings:
-  type: theme_settings
-  label: 'CION settings'
