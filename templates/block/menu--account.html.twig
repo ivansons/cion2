@@ -30,40 +30,28 @@
 {{ menus.menu_links(items, attributes, 0) }}
 
 {% macro menu_links(items, attributes, menu_level) %}
-<div class="container--lg row align--center row--between">
-    
-        <div class="nav__logo">
-            <svg>
-                <use xlink:href="assets/svg/sprite.svg#logo-cion"></use>
-            </svg>
-        </div>
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes }} class="nav__menu pos--r">
+      <ul{{ attributes }} class="row row--end container--lg">
     {% else %}
       <ul>
     {% endif %}
     {% for item in items %}
-      <li{{ item.attributes }} class="nav__item">
+      <li{{ item.attributes }} class="account-bar__item">
         {{ link(item.title, item.url) }}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}
       </li>
     {% endfor %}
+    <span class="alert-menu__anchor">
+            <a class="alert-btn" data-idea-toggle="alert-menu">
+                <img src="assets/img/icon-clipboard.svg" alt="">
+            </a>
+        </span>
     </ul>
   {% endif %}
-   <div class="-has-icon -hide-bp-sm">
-    
-            <input type="search" class="input__text--short" placeholder="Ask the PA">
-            <svg class="icon icon--sm">
-                <use xlink:href="assets/svg/sprite.svg#icon-pa"></use>
-            </svg>
-
-        </div>
-
-        <button class="btn__primary mar__l">
-            Log Out
-        </button>
+   
+   
 {% endmacro %}

@@ -40,7 +40,7 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes }} class="nav__menu pos--r">
+      <ul{{ attributes }} class="nav__menu--secondary mar__b--lg">
     {% else %}
       <ul>
     {% endif %}
@@ -54,16 +54,5 @@
     {% endfor %}
     </ul>
   {% endif %}
-   <div class="-has-icon -hide-bp-sm">
-    
-            <input type="search" class="input__text--short" placeholder="Ask the PA">
-            <svg class="icon icon--sm">
-                <use xlink:href="assets/svg/sprite.svg#icon-pa"></use>
-            </svg>
-
-        </div>
-
-        <button class="btn__primary mar__l">
-            Log Out
-        </button>
+   
 {% endmacro %}

@@ -57,20 +57,36 @@
 {# Main #}
 {% block main %}
   <main role="main" class="main-container {{ container }} js-quickedit-main-content">
-    <div>
-    {# Secondary Menu #}
-      {% block secondary_menu %}
-        <div>
+
+  <nav class="account-bar text--light -hide-bp-sm">
+  {% block secondary_menu %}
+        
           {{ page.secondary_menu }}
-        </div>
+       
       {% endblock %}
 
-      {# Primary Menu #}
+</nav>
+    <div>
+    {# Secondary Menu #}
+    
+
+      
+
+<nav class="nav">
+
+        {# Primary Menu #}
         {% block primary_menu %}
-          <div>
+        
             {{ page.primary_menu }}
-          </div>
+          
         {% endblock %}
+        
+       
+    
+    </div>
+
+</nav>
+        
 
       {# Header #}
       {% if page.header %}
@@ -136,6 +152,8 @@
 
   {% block footer %}
   <footer class="footer section nav" role="contentinfo">
+  <div class="border__split"></div>
+
   <div class="container--lg row row__gutters align--start responsive--sm">
   <div class="col--25 text--light">
     {{ page.footer_left }}
@@ -151,5 +169,9 @@
   </div>
 
     </div>
+
+
+    
+    <div class="border__split"></div>
   </footer>
   {% endblock %}
