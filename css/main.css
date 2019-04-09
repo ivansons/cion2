@@ -2266,7 +2266,7 @@ body.-is-visible{
     }
 }
 .theme__bg--crew:before{
-    background-image:url(../assets/img/crew.jpg)
+    background-image:url(../img/crew.jpg)
 }
 .theme__bg--crew:before,.theme__bg--filming:before{
     content:"";
@@ -2281,7 +2281,7 @@ body.-is-visible{
     background-size:cover
 }
 .theme__bg--filming:before{
-    background-image:url(../assets/img/filming.jpg)
+    background-image:url(../img/filming.jpg)
 }
 .theme__bg--highway:before{
     content:"";
@@ -2294,7 +2294,7 @@ body.-is-visible{
     background-repeat:no-repeat;
     background-position:50%;
     background-size:cover;
-    background-image:url(../assets/img/highway.jpg)
+    background-image:url(../img/highway.jpg)
 }
 .theme__bg--crewdatabase{
     background-color:rgba(44,52,56,.85)
@@ -2307,7 +2307,7 @@ body.-is-visible{
     width:100%;
     height:100%;
     z-index:-1;
-    background-image:url(../assets/img/bg-crewdatabase.jpg);
+    background-image:url(../img/bg-crewdatabase.jpg);
     background-attachment:fixed;
     background-size:cover;
     background-repeat:no-repeat;
@@ -2324,14 +2324,14 @@ body.-is-visible{
     width:100%;
     height:100%;
     z-index:-1;
-    background-image:url(../assets/img/bg-forest.jpg);
+    background-image:url(../img/bg-forest.jpg);
     background-attachment:fixed;
     background-size:cover;
     background-repeat:no-repeat;
     background-position:50%
 }
 .theme__bg--musicians{
-    background:linear-gradient(35deg,rgba(9,63,186,.85),rgba(41,171,226,.85)),url(../assets/img/bg-musicians.jpg);
+    background:linear-gradient(35deg,rgba(9,63,186,.85),rgba(41,171,226,.85)),url(../img/bg-musicians.jpg);
     background-attachment:fixed;
     background-size:cover;
     background-repeat:no-repeat;
@@ -2339,7 +2339,7 @@ body.-is-visible{
     background-blend-mode:multiply
 }
 .theme__bg--northern-music{
-    background:linear-gradient(35deg,rgba(9,63,186,.85),rgba(41,171,226,.85)),url(../assets/img/bg-northern-music.jpg);
+    background:linear-gradient(35deg,rgba(9,63,186,.85),rgba(41,171,226,.85)),url(../img/bg-northern-music.jpg);
     background-attachment:fixed;
     background-size:cover;
     background-repeat:no-repeat;
@@ -2372,7 +2372,7 @@ body.-is-visible{
 }
 .theme--purple{
     overflow:hidden;
-    background:linear-gradient(35deg,rgba(79,0,188,.85),rgba(141,9,186,.85)),url(../assets/img/highway.jpg);
+    background:linear-gradient(35deg,rgba(79,0,188,.85),rgba(141,9,186,.85)),url(../img/highway.jpg);
     background-blend-mode:multiply;
     color:#d165f6
 }
@@ -2397,7 +2397,7 @@ body.-is-visible{
 }
 .theme--blue{
     overflow:hidden;
-    background:linear-gradient(35deg,rgba(9,63,186,.85),rgba(41,171,226,.85)),url(../assets/img/studio.jpg);
+    background:linear-gradient(35deg,rgba(9,63,186,.85),rgba(41,171,226,.85)),url(../img/studio.jpg);
     background-blend-mode:multiply;
     color:#49c7fd
 }

@@ -58,12 +58,16 @@
     
             <input type="search" class="input__text--short" placeholder="Ask the PA">
             <svg class="icon icon--sm">
-                <use xlink:href="assets/svg/sprite.svg#icon-pa"></use>
+                <use xlink:href="{{ directory }}/img/svg/sprite.svg#icon-pa"></use>
             </svg>
 
         </div>
 
-        <button class="btn__primary mar__l">
+        <button href="/user/logout" class="btn__primary mar__l">
             Log Out
         </button>
+      
+
+
+
 {% endmacro %}
