@@ -28,6 +28,7 @@
  */
 #}
 <section class="section theme--gray theme__bg--filming">
+<div class="container--sm text--center text--light" >
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
@@ -37,4 +38,5 @@
   {% block content %}
     {{ content }}
   {% endblock %}
+  </div>
 </section>

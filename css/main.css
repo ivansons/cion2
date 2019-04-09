@@ -3035,12 +3035,12 @@ color: #fff;
     color: #fff;
 }
 
-#block-useraccountmenu a{
+#block-cion2-account-menu a{
  text-decoration: none;
 color: #fff;
-font-size: .75em;
+font-size: 12px;
 } 
-#block-useraccountmenu ul{
+#block-cion2-account-menu ul{
     list-style: none;
 }
 
@@ -3054,4 +3054,42 @@ font-size: .75em;
     line-height: 1.5;
     text-transform: uppercase;
     color: #7b8185;
+}
+
+.nav{
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.views-slideshow-controls-top{
+position: absolute;
+top: 38%;
+width: 100%;
+}
+
+.slide__nav--right{
+    right: calc(100% - 97%);
+    z-index: 1;
+}
+
+.views_slideshow_main::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(35deg,#093fba,#29abe2);
+}
+
+.responsive--sm-home .field-div{
+    width: 100%;
+}
+
+.responsive--sm-home  .col--50{
+    flex: 0 0 50%;
+    float: left;
+    width: 50%;
+    height: 100%;
 }
