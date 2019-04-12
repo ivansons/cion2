@@ -62,10 +62,16 @@
             </svg>
 
         </div>
-
-        <button href="/user/logout" class="btn__primary mar__l">
-            Log Out
+         
+        {% if logged_in  %}
+<button href="/user/logout" class="btn__primary mar__l">
+            Log out
         </button>
+{% else %}
+<button href="/user" class="btn__primary mar__l">
+            Log in
+        </button>
+{% endif %}
       
 
 

@@ -1465,7 +1465,7 @@ a{
 .article__content h2{
     font-size:1.1em
 }
-.article h4{
+.article h4, .region-sidebar-second h2{
     margin-bottom:0;
     font-size:.75em;
     font-style:normal
