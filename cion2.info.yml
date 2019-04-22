@@ -10,7 +10,7 @@ regions:
   page_top: 'Page Top'
   help: 'Help'
   content: 'Content'
-  sidebar_first: 'Sidebar First'
+  highlighted: 'Highlighted'
   sidebar_second: 'Sidebar Second'
   footer_left: 'Footer left'
   footer_middle: 'Footer middle'

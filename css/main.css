@@ -3093,3 +3093,15 @@ width: 100%;
     width: 50%;
     height: 100%;
 }
+
+.col--20-20{
+max-width:20%;
+}
+.media-object__image img{
+height: 100%;
+}
+
+.pos--l--14{
+margin-right: auto;
+margin-left: 0px;
+}
