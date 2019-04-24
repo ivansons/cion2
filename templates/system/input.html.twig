@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Default theme implementation for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ *
+ * @see template_preprocess_input()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<div class="-has-icon -hide-bp-sm">
+    
+            <input  {{ attributes }} type="search" class="input__text--short" placeholder="Ask the PA">
+            {{ children }}
+            <svg class="icon icon--sm">
+                <use xlink:href="themes/cion2/img/svg/sprite.svg#icon-pa"></use>
+            </svg>
+
+        </div>

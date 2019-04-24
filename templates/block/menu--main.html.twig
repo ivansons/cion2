@@ -63,13 +63,13 @@
 
         </div>
          
-        {% if logged_in  %}
-<button href="/user/logout" class="btn__primary mar__l">
-            Log out
+        {% if item.title.getUntranslatedString() == 'Log in' %}
+        <button href="/user/logout" class="btn__primary mar__l">
+            Log in
         </button>
 {% else %}
 <button href="/user" class="btn__primary mar__l">
-            Log in
+            Log out
         </button>
 {% endif %}
       
