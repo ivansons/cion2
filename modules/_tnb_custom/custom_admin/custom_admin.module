@@ -1,0 +1,31 @@
+<?php
+
+/**
+* This module is responsibel for many enhancements
+* Custom Styling
+* Hiding some elements for some users
+* Implementing custom dashboards
+* CKEditor Stylesheet is loaded and stored in this module
+* CKEditor plugins are loaded through this module
+**/
+
+
+
+/**
+ * Implements hook_page_attachments().
+ */
+function custom_admin_page_attachments(array &$attachments) {
+  $theme = \Drupal::theme()->getActiveTheme()->getName();
+  if ($theme == 'seven') {
+    $attachments['#attached']['library'][] = 'custom_admin/custom.admin';
+    
+  }
+}
+
+
+/**
+ * Implements hook_ckeditor_css_alter().
+ */
+function custom_admin_ckeditor_css_alter(&$css, $editor) {
+  $css[] = drupal_get_path('module', 'custom_admin') . '/css/ckeditor.override.css';
+}

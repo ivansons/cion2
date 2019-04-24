@@ -1,0 +1,6 @@
+/* CKEDITOR Styling Changes */
+
+.cke_editable img {
+	width:100% !important;
+	height:auto !important;
+}

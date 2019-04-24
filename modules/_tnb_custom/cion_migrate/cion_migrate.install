@@ -1,0 +1,9 @@
+<?php 
+/** 
+ * Implements hook_uninstall(). 
+ */ 
+function cion_migrate_uninstall() { 
+  db_query("DELETE FROM {config} WHERE name LIKE 'migrate_plus.migration.cion_crew%'"); 
+  drupal_flush_all_caches(); 
+} 
+?>

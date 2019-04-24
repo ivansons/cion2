@@ -1,0 +1,6 @@
+name: Admin Theme Customizations
+description: A variety of Admin Theme Customizations.
+package: TNB Custom
+
+type: module
+core: 8.x

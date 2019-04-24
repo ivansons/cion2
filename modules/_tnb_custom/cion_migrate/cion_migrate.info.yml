@@ -1,0 +1,7 @@
+type: module
+name: CION Migration
+description: 'TNB-created Module for migrating the old CION Django Site to D8'
+package: TNB Custom
+core: 8.x
+dependencies:
+  - drupal:migrate (>= 8.1)
